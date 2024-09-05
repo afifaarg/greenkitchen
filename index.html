@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Omnifood est un abonnement alimentaire alimenté par l'IA qui vous aidera à manger sainement, 365 jours par an. Il est personnalisé selon vos goûts et besoins nutritionnels."
+    />
+
+    <!-- Toujours inclure cette ligne de code !!! -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="img/omnifood-logo.png" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+    <script defer src="js/script.js"></script>
+
+    <title>Green Cooking !</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#">
+        <img class="logo" alt="Logo Omnifood" src="img/omnifood-logo.png" height="20"  />
+      </a>
+
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="#how">Étapes</a></li>
+          <li><a class="main-nav-link" href="#meals">Repas</a></li>
+          <li>
+            <a class="main-nav-link" href="#testimonials">Témoignages</a>
+          </li>
+          <li><a class="main-nav-link" href="#pricing">Tarifs</a></li>
+          <li><a class="main-nav-link nav-cta" href="#cta">Essayez gratuitement</a></li>
+        </ul>
+      </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </header>
+
+    <main>
+      <section class="section-hero">
+        <div class="hero">
+          <div class="hero-text-box">
+            <h1 class="heading-primary">
+              Un repas sain livré à votre porte, chaque jour
+            </h1>
+            <p class="hero-description">
+              L'abonnement alimentaire intelligent 365 jours par an qui vous fera
+              manger sainement. Personnalisé selon vos goûts et besoins
+              nutritionnels.
+            </p>
+            <a href="#cta" class="btn btn--full margin-right-sm"
+              >Commencez à bien manger</a
+            >
+
+            <a href="#how" class="btn btn--outline">En savoir plus &darr;</a>
+            <div class="delivered-meals">
+              <div class="delivered-imgs">
+                <img src="img/customers/customer-1.jpg" alt="Photo client" />
+                <img src="img/customers/customer-2.jpg" alt="Photo client" />
+                <img src="img/customers/customer-3.jpg" alt="Photo client" />
+                <img src="img/customers/customer-4.jpg" alt="Photo client" />
+                <img src="img/customers/customer-5.jpg" alt="Photo client" />
+                <img src="img/customers/customer-6.jpg" alt="Photo client" />
+              </div>
+              <p class="delivered-text">
+                <span>250 000+</span> repas livrés l'année dernière !
+              </p>
+            </div>
+          </div>
+          <div class="hero-img-box">
+            <picture>
+              <source srcset="img/hero.webp" type="image/webp" />
+              <source srcset="img/hero-min.png" type="image/png" />
+
+              <img
+                src="img/hero-min.png"
+                class="hero-img"
+                alt="Femme appréciant un repas, plats en boîte et bols sur la table"
+              />
+            </picture>
+          </div>
+        </div>
+        <div class="text-white relative">
+          <svg class="wave-svg" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+              <path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z" fill="currentColor"></path>
+          </svg>
+          <div class="white-bg"></div>
+      </div>
+      </section>
+      <section class="section-meals" id="meals">
+        <div class="container center-text">
+          <span class="subheading">Repas</span>
+          <h2 class="heading-secondary">
+            Vous Avez le choix Parmi Plus que 5,000 recettes
+          </h2>
+        </div>
+
+        <div class="container grid grid--3-cols margin-bottom-md">
+          <div class="meal">
+            <img
+              src="img/meals/meal-1.jpg"
+              class="meal-img"
+              alt="Japanese Gyozas"
+            />
+            <div class="meal-content">
+              <div class="meal-tags">
+                <span class="tag tag--vegetarian">Vegetarian</span>
+              </div>
+              <p class="meal-title">Japanese Gyozas</p>
+              <ul class="meal-attributes">
+                <li class="meal-attribute">
+                  <ion-icon class="meal-icon" name="flame-outline"></ion-icon>
+                  <span><strong>650</strong> calories</span>
+                </li>
+                <li class="meal-attribute">
+                  <ion-icon
+                    class="meal-icon"
+                    name="restaurant-outline"
+                  ></ion-icon>
+                  <span>NutriScore &reg; <strong>74</strong></span>
+                </li>
+                <li class="meal-attribute">
+                  <ion-icon class="meal-icon" name="star-outline"></ion-icon>
+                  <span><strong>4.9</strong> rating (537)</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="meal">
+            <img
+              src="img/meals/meal-2.jpg"
+              class="meal-img"
+              alt="Avocado Salad"
+            />
+            <div class="meal-content">
+              <div class="meal-tags">
+                <span class="tag tag--vegan">Vegan</span>
+                <span class="tag tag--paleo">Paleo</span>
+              </div>
+              <p class="meal-title">Avocado Salad</p>
+              <ul class="meal-attributes">
+                <li class="meal-attribute">
+                  <ion-icon class="meal-icon" name="flame-outline"></ion-icon>
+                  <span><strong>400</strong> calories</span>
+                </li>
+                <li class="meal-attribute">
+                  <ion-icon
+                    class="meal-icon"
+                    name="restaurant-outline"
+                  ></ion-icon>
+                  <span>NutriScore &reg; <strong>92</strong></span>
+                </li>
+                <li class="meal-attribute">
+                  <ion-icon class="meal-icon" name="star-outline"></ion-icon>
+                  <span><strong>4.8</strong> rating (441)</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="diets">
+            <h3 class="heading-tertiary">Works with any diet:</h3>
+            <ul class="list">
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Vegetarian</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Vegan</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Pescatarian</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Gluten-free</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Lactose-free</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Keto</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Paleo</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Low FODMAP</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Kid-friendly</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="container all-recipes">
+          <a href="#" class="link">Voir Tous les recettes &rarr;</a>
+        </div>
+      </section>
+
+     
+      
+      <section class="section-testimonials" id="testimonials">
+        <div class="testimonials-container">
+          <span class="subheading">Témoignages</span>
+          <h2 class="heading-secondary">Une fois essayé, vous ne pouvez plus revenir en arrière</h2>
+      
+          <div class="testimonials">
+            <figure class="testimonial">
+              <img
+                class="testimonial-img"
+                alt="Photo du client Dave Bryson"
+                src="img/customers/dave.jpg"
+              />
+              <blockquote class="testimonial-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis officia cum quas excepturi dolorum eveniet quae quos, quia iure recusandae expedita ratione est totam eos saepe dolor animi fuga itaque.
+              </blockquote>
+              <p class="testimonial-name">&mdash; Dave Bryson</p>
+            </figure>
+      
+            <figure class="testimonial">
+              <img
+                class="testimonial-img"
+                alt="Photo du client Ben Hadley"
+                src="img/customers/ben.jpg"
+              />
+              <blockquote class="testimonial-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt minima quia vel possimus odio illo ex rerum? Ea saepe, velit id numquam deserunt natus possimus rem. Id voluptatibus omnis ducimus.
+              </blockquote>
+              <p class="testimonial-name">&mdash; Ben Hadley</p>
+            </figure>
+      
+            <figure class="testimonial">
+              <img
+                class="testimonial-img"
+                alt="Photo du client Steve Miller"
+                src="img/customers/steve.jpg"
+              />
+              <blockquote class="testimonial-text">
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos vitae molestiae libero unde blanditiis, laboriosam nihil, debitis voluptatum quia cupiditate et earum sed ut error asperiores voluptates accusantium rem modi?
+              </blockquote>
+              <p class="testimonial-name">&mdash; Steve Miller</p>
+            </figure>
+      
+            <figure class="testimonial">
+              <img
+                class="testimonial-img"
+                alt="Photo de la cliente Hannah Smith"
+                src="img/customers/hannah.jpg"
+              />
+              <blockquote class="testimonial-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam necessitatibus eius natus, cupiditate reprehenderit molestias dolorem, magni eaque mollitia aut a. Temporibus cum, praesentium aliquam voluptatem sed ullam esse tenetur.
+              </blockquote>
+              <p class="testimonial-name">&mdash; Hannah Smith</p>
+            </figure>
+          </div>
+        </div>
+        <div class="gallery">
+          <figure class="gallery-item">
+            <img
+              src="img/gallery/gallery-1.jpg"
+              alt="Photo of beautifully
+            arranged food"
+            />
+            <!-- <figcaption>Caption</figcaption> -->
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/gallery/gallery-2.jpg"
+              alt="Photo of beautifully
+            arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/gallery/gallery-3.jpg"
+              alt="Photo of beautifully
+            arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/gallery/gallery-4.jpg"
+              alt="Photo of beautifully
+            arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/gallery/gallery-5.jpg"
+              alt="Photo of beautifully
+            arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/gallery/gallery-6.jpg"
+              alt="Photo of beautifully
+            arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/gallery/gallery-7.jpg"
+              alt="Photo of beautifully
+            arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/gallery/gallery-8.jpg"
+              alt="Photo of beautifully
+            arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/gallery/gallery-9.jpg"
+              alt="Photo of beautifully
+            arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/gallery/gallery-10.jpg"
+              alt="Photo of beautifully
+            arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/gallery/gallery-11.jpg"
+              alt="Photo of beautifully
+            arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/gallery/gallery-12.jpg"
+              alt="Photo of beautifully
+            arranged food"
+            />
+          </figure>
+        </div>
+      </section>
+      <section class="section-pricing" id="tarifs">
+        <div class="container">
+          <span class="subheading">Tarifs</span>
+          <h2 class="heading-secondary">
+            Bien manger sans se ruiner
+          </h2>
+        </div>
+      
+        <div class="container grid grid--2-cols margin-bottom-md">
+          <div class="pricing-plan pricing-plan--starter">
+            <header class="plan-header">
+              <p class="plan-name">Débutant</p>
+              <p class="plan-price"><span>$</span>399</p>
+              <p class="plan-text">par mois. Seulement Euro 13 par repas !</p>
+            </header>
+            <ul class="list">
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>1 repas par jour</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Commander de 11h à 21h</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Livraison gratuite</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="close-outline"></ion-icon>
+              </li>
+            </ul>
+            <div class="plan-sign-up">
+              <a href="#" class="btn btn--full">Commencez à bien manger</a>
+            </div>
+          </div>
+      
+          <div class="pricing-plan pricing-plan--complete">
+            <header class="plan-header">
+              <p class="plan-name">Complet</p>
+              <p class="plan-price"><span>$</span>649</p>
+              <p class="plan-text">par mois. Seulement ₹11 par repas !</p>
+            </header>
+            <ul class="list">
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span><strong>2 repas</strong> par jour</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Commander <strong>24h/24, 7j/7</strong></span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Livraison gratuite</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Accès aux dernières recettes</span>
+              </li>
+            </ul>
+            <div class="plan-sign-up">
+              <a href="#" class="btn btn--full">Commencez à bien manger</a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="container grid">
+          <aside class="plan-details">
+            Les prix incluent toutes les taxes applicables. Vous pouvez annuler à tout moment.          
+          </aside>
+        </div>
+      </section>
+      
+
+      <section class="section-cta" id="cta">
+        <div class="container">
+          <div class="cta">
+            <div class="cta-text-box">
+              <h2 class="heading-secondary">Obtenez une réduction sur vos premières commandes !</h2>
+              <p class="cta-text">
+                Des repas sains, savoureux et sans tracas vous attendent. Commencez
+                à bien manger dès aujourd'hui. Vous pouvez annuler ou suspendre à tout moment, et vous bénéficierez d'une réduction spéciale sur vos premières commandes !
+              </p>
+      
+              <form class="cta-form" name="inscription" netlify>
+                <div>
+                  <label for="nom-complet">Nom complet</label>
+                  <input
+                    id="nom-complet"
+                    type="text"
+                    placeholder="Metta Surendhar"
+                    name="nom-complet"
+                    required
+                  />
+                </div>
+      
+                <div>
+                  <label for="email">Adresse email</label>
+                  <input
+                    id="email"
+                    type="email"
+                    placeholder="nom@example.com"
+                    name="email"
+                    required
+                  />
+                </div>
+      
+                <div>
+                  <label for="select-ou">Où avez-vous entendu parler de nous ?</label>
+                  <select id="select-ou" name="select-ou" required>
+                    <option value="">Veuillez choisir une option :</option>
+                    <option value="amis">Amis et famille</option>
+                    <option value="youtube">Vidéo YouTube</option>
+                    <option value="podcast">Podcast</option>
+                    <option value="publicité">Publicité Facebook</option>
+                    <option value="autres">Autres</option>
+                  </select>
+                </div>
+      
+                <button class="btn btn--form">Inscrivez-vous maintenant</button>
+      
+                <!-- <input type="checkbox" />
+                <input type="number" /> -->
+              </form>
+            </div>
+            <div
+              class="cta-img-box"
+              role="img"
+              aria-label="Femme appréciant un repas"
+            ></div>
+          </div>
+        </div>
+      </section>
+      
+      <footer class="footer">
+        <div class="container>
+          <div class="logo-col">
+            <a href="#" class="footer-logo">
+              <img class="logo" alt="Logo Omnifood" src="img/omnifood-logo.png" />
+            </a>
+      
+            <ul class="social-links">
+              <li>
+                <a class="footer-link" href="#"
+                  ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
+                ></a>
+              </li>
+              <li>
+                <a class="footer-link" href="#"
+                  ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+                ></a>
+              </li>
+              <li>
+                <a class="footer-link" href="#"
+                  ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
+                ></a>
+              </li>
+            </ul>
+      
+            <p class="copyright">
+              Créé avec ❤️ par ab_.informatique & aa.coddes
+            </p>
+          </div>
+        </div>
+      </footer>
+      
+    </main>
+  </body>
+</html>
